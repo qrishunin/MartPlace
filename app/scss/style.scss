@@ -141,9 +141,45 @@
     
   }
 }
-
-
 // end section search
+// start section items 
+.items{
+  background-color: #fff;
+  height: 710px;
+  &__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 185px auto 116px;
+    &-box{
+      text-align: center;
+      padding: 40px 35px 50px;
+      transition: all .5s;
+      &:hover{
+        content: '';
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+      }
+      &__title{
+        font-size: 24px;
+        color: #010101;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      &__text{
+        color: $text;
+        line-height: 30px;
+      }
+    }
+    &-box + &-box{
+      margin-left: 20px;
+    }
+  }
+}
+
+
+
+// end section items 
 
 
 
