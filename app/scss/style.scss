@@ -1,8 +1,9 @@
 @import 'vars';
 @import 'global';
 
-
-.header__top-fluid{
+// start header 
+ 
+.header__top{
   background-color: #eef1f3;
 }
 .header__top-inner{
@@ -37,6 +38,7 @@
     background-color: $text_2;
     padding: 13px 18px;
     border-radius: 22px;
+    
   }
 }
 .header__menu{
@@ -45,14 +47,15 @@
 .menu{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 80px;
+
 }
 .menu__list{
   li{
     display: inline-block;
     & + li{
       margin-left: 34px;
-      
     }
   }
   a{
@@ -62,6 +65,88 @@
     line-height: 24px;
   }
 }
+.menu__search{
+  form{
+    min-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    input{
+      display: block;
+      width: 100%;
+      border: 1px solid #d9dfe5;
+      border-radius: 22px;
+      font-size: 15px;
+      line-height: 30px;
+      height: 46px;
+      padding-left: 25px;
+      padding-right: 80px;
+      &::placeholder{
+       color: #898f96; 
+      }
+    }
+    button{
+      position: absolute;
+      border: none;
+      background-color: $text_2;
+      right: 0;
+      top: 0;
+      width: 70px;
+      height: 46px;
+      border-radius: 22px;
+      color: #fff;
+    }
+  }
+}
+// end header
+// start section search
+.search{
+  min-height: 725px;
+}
+.search__inner{
+  padding: 180px 0px 135px;
+  color: #fff;
+  text-align: center;
+  &-title{
+    font-size: 60px;
+    line-height: 70px;
+    span{
+      display: block;
+      font-weight: 700;
+      word-break: break-all;
+    }
+  }
+  &-text{
+    font-size: 20px;
+    line-height: 70px;
+    font-weight: 500;
+    margin-bottom: 80px;
+  }
+  &-box{
+    text-align: center;
+    a{
+     border: 1px solid #fff;
+     border-radius: 32px;
+     color: #fff; 
+     margin-left: 30px;
+     padding: 20px 30px 16px;
+     background-color: transparent;
+     transition: all .5s;
+     &:hover{
+      content: '';
+      background-color: #fff;
+      color: $text_2;
+     }
+    }
+    
+  }
+}
+
+
+// end section search
+
+
+
 
 
 

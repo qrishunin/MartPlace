@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MartPlace</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -15,25 +15,23 @@
   <!-- start header  -->
   <header class="header">
     <div class="header__top">
-      <div class="header__top-fluid">
-        <div class="container">
-          <div class="header__top-inner">
-            <div class="top-inner__logo">
-              <a href="#">
-                <img src="images/logo.png" alt="">
-                <span>Mart</span>Place
-              </a>
-            </div>
-            <div class="top-inner__seler">
-              <a href="#">
-                Became a seler
-              </a>
-            </div>
-            <div class="top-inner__box">
-              <a class="ring" href="#"></a>
-              <a class="message" href="#"></a>
-              <a class="cart" href="#"></a>
-            </div>
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="top-inner__logo">
+            <a href="#">
+              <img src="images/logo.png" alt="">
+              <span>Mart</span>Place
+            </a>
+          </div>
+          <div class="top-inner__seler">
+            <a href="#">
+              Became a seler
+            </a>
+          </div>
+          <div class="top-inner__box">
+            <a class="ring" href="#"></a>
+            <a class="message" href="#"></a>
+            <a class="cart" href="#"></a>
           </div>
         </div>
       </div>
@@ -47,14 +45,42 @@
               <li><a href="#">Festures</a></li>
               <li><a href="#">Pages</a></li>
             </ul>
-            <div class="menu__search"></div>
+            <div class="menu__search">
+              <form>
+                <input type="text" placeholder="Search product here..." required>
+                <button type="submit">
+                  <img src="images/icons/search.png" alt="">
+                </button>
+              </form>
+            </div>
           </nav>
         </div>
       </div>
     </div>
-
   </header>
   <!-- end header  -->
+  <!-- start section search  -->
+  <section class="search" style="background-image: linear-gradient(180deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__inner-title">
+          Create Your Own
+          <span>
+            Digital Product Marketplace
+          </span>
+        </div>
+        <div class="search__inner-text">
+          MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+        </div>
+        <div class="search__inner-box">
+          <a class="search__btn" href="#">View All Products</a>
+          <a class="search__btn" href="#">Popular Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end section search  -->
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
