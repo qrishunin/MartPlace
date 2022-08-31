@@ -502,7 +502,8 @@
 .rate-star{
   margin-left: 14px;
 }
-.products__bottom-btn{
+.products__bottom-btn,
+.shopping__inner-btn{
   margin-top: 30px;
   text-align: center;
   button{
@@ -653,11 +654,59 @@
   }
   
 }
-
-
-
-
 // end select
+// start shopping 
+.shopping{
+  
+}
+.shopping__inner{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 30px;
+  &-item{
+    min-width: 953px;
+    max-height: 560px;
+    text-align: center;
+    background-color: $text_2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+  }
+  &-images{
+    width: 120px; 
+    height: 101px;
+    margin-bottom: 45px;
+    padding: 0px 10px;
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  &-title{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+    min-width: 314px;
+    padding: 0px 10px;
+  }
+  &-text{
+    line-height: 30px;
+    color: #fff;
+    max-width: 601px;
+    padding: 0px 10px;
+  }
+  &-btn{
+    button{
+      background-color: #fff;
+      color: $text_2;
+    }
+  }
+}
+.shopping-bg{
+  background-color: #7347c1;
+}
+// end shopping 
 
 
 
