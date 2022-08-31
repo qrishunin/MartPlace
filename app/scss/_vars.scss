@@ -3,12 +3,29 @@ $text_2: #0674ec;
 $grey: #f6f7fb;
 $grey_2: #747b86;
 
+@mixin f400 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+@mixin f500{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+@mixin f700 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+
+
 .title{
   color: #000;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 30px;
   min-width: 300px;
-  word-break: break-all;
+  padding: 0px 15px 0px 0px;
+  
 }
 .box{
   display: flex;
@@ -77,3 +94,5 @@ $grey_2: #747b86;
   background-size: cover;
   margin-right: 9px;
 }
+
+

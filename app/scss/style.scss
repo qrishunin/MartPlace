@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'global';
+@import 'icons';
 
 // start header 
  
@@ -19,7 +20,7 @@
     align-items: center;
     color: #000;
     font-size: 30px;
-    font-weight: 700;
+    @include f700;
     
   }
   span{
@@ -31,7 +32,7 @@
 .top-inner__seler{
     margin-left: auto;
     margin-right: 50px;
-    font-weight: 400;
+    @include f400;
   a{
     font-size: 14px;
     color: #fff;
@@ -112,14 +113,14 @@
     line-height: 70px;
     span{
       display: block;
-      font-weight: 700;
+      @include f700;
       word-break: break-all;
     }
   }
   &-text{
     font-size: 20px;
     line-height: 70px;
-    font-weight: 500;
+    @include f500;
     margin-bottom: 80px;
   }
   &-box{
@@ -182,17 +183,21 @@
 
 .products-slider,
 .followers-slider{
-  height: 850px;
+  min-height: 850px;
   background-color: #eff1f5;
   padding-top: 112px;
   padding-bottom: 118px;
   &__title {
-    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-height: 110px;
     background-color: #fff;
     padding: 45px 30px;
     border-radius: 6px;
     box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+    margin-bottom: 30px;
+
   }
 }
 
@@ -306,8 +311,7 @@
   background-color: $grey;
 }
 
-.products__inner-filter,
-.products-slider__title{
+.products__inner-filter{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,10 +321,6 @@
   border-radius: 6px;
   box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
   margin-bottom: 30px;
-  &__title{
-    font-size: 30px;
-
-  }
   &__btn{
     color: #747b86;
     display: flex;
@@ -405,7 +405,7 @@
     padding: 30px 30px 0px;
     color: #000;
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     min-width: 300px;
     word-break: break-all;
 
@@ -458,7 +458,7 @@
     min-height: 60px;
     padding: 15px 30px;
     font-size: 15px;
-    font-weight: 500;
+    @include f500;
   }
   &-price{
     background-color: #e6f1fd;
@@ -524,7 +524,6 @@
 // start followers 
 .followers-slider__title{
   margin-bottom: 30px;
-  position: relative;
 
 }
 .slick-slide{
@@ -533,12 +532,8 @@
 .slick-arrow{
   position: absolute;
   border: none;
-  background-color: $text_2;
   padding: 14px 20px;
-  border-radius: 24px;
 }
-
-
 
 .slick-prev {
   right: 70px;
@@ -551,6 +546,49 @@
   top: -87px;
 }
 // end followers 
+
+// start adventages 
+.adventages{
+  background-color: #212225;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    min-height: 350px;
+    
+  }
+}
+.adventages__item{
+  max-width: 180px;
+  padding: 100px 15px 95px;
+  text-align: center;
+  &-images{
+
+    padding-bottom: 50px;
+  }
+  &-total{
+    font-size: 36px;
+  }
+  &-text{
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+
+  }
+}
+.item-total{
+  color: #feb71d;
+}
+.sales-total{
+  color: #58c9e9;
+}
+.customers-total{
+  color: #77de51;
+}
+.members-total{
+  color: #ff6a6d;
+}
+
+// end adventages 
 
 
 
