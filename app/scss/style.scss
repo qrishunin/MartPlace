@@ -589,8 +589,75 @@
 }
 
 // end adventages 
+// start select
+.select{
+  background-color: #fff;
+  max-height: 1180px;
+  text-align: center;
+  &__box{
+    margin: 0 auto;
+    padding: 120px 15px 60px;
+    max-width: 684px; 
+    &-title{
+    font-size: 36px;
+    color: #000;
+    }
+    span{
+      color: $text_2;
+    }
+    &-text{
+    padding-top: 35px;
+    color: #555555;
+    }
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 361px;
+    max-height: 373px; 
+    background-color: #fff;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 29px;
+    &-number{
+      position: absolute;
+      font-size: 48px;
+      color: rgba(92, 135, 248, 0.2);
+      @include f300;
+      left: 20px;
+      top: 20px;
+      
+    }
+    &-images{
+      padding: 56px 10px 48px;
+    }
+    &-title{
+      font-size: 24px;
+      color: #000;
+      max-width: 310px;
+      padding: 0px 10px;
+    }
+    &-text{
+      line-height: 30px;
+      color: #555555;
+      padding: 28px 30px 56px;
+    }
+  }
+  
+}
 
 
+
+
+// end select
 
 
 
