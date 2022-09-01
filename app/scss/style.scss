@@ -503,7 +503,8 @@
   margin-left: 14px;
 }
 .products__bottom-btn,
-.shopping__inner-btn{
+.shopping__inner-btn,
+.feedback__inner-btn{
   margin-top: 30px;
   text-align: center;
   button{
@@ -652,13 +653,9 @@
       padding: 28px 30px 56px;
     }
   }
-  
 }
 // end select
 // start shopping 
-.shopping{
-  
-}
 .shopping__inner{
   display: flex;
   justify-content: center;
@@ -707,6 +704,113 @@
   background-color: #7347c1;
 }
 // end shopping 
+.feedback{
+  background-color: #fff;
+  max-height: 838px;
+  &__inner-btn{
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+  &__box{
+    padding-top: 118px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 690px;
+    &-title{
+      font-size: 36px;
+      color: #000;
+      padding: 0px 15px;
+    }
+    span{
+      color: $text_2;
+    }
+    &-text{
+      line-height: 30px;
+      color: #555555;
+      padding: 35px 15px 0px;
+    }
+  }
+  &__inner{
+
+  }
+  &__item{
+    min-width: 555px;
+    background: #fff;
+    border-left: 1px solid $text_2;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    &-box{
+      display: flex;
+      justify-content: jcsb;
+      align-items: center;
+      padding-top: 50px;
+    }
+  }
+  &__inner{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 553px;
+    background-color: #fff;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    border-left: 1px solid $text_2;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: relative;
+    &-box{
+      position: relative;
+      padding: 46px 40px 0px 34px;
+      &__images{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &__data{
+        max-width: 240px;
+        width: 100%;
+      }
+      &__name{
+        padding-left: 16px;
+        font-size: 20px;
+        color: #000;
+      }
+      &__profi{
+        padding-left: 16px;
+        padding-top: 15px;
+        color: #555;
+      }
+    }
+    &-text{
+      padding: 30px 40px 52px 34px;
+      line-height: 30px;
+      color: #555;
+    }
+
+  }
+ 
+
+}
+.lnr-bubble{
+  position: absolute;
+  right: 40px;
+  top: 42px;
+}
+
+
+
+
+
+
+
+// start feedback 
+
+// end feedback 
 
 
 
