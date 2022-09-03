@@ -499,7 +499,8 @@
 }
 .products__bottom-btn,
 .shopping__inner-btn,
-.feedback__inner-btn{
+.feedback__inner-btn,
+.join__item-btn{
   margin-top: 30px;
   text-align: center;
   button{
@@ -962,9 +963,37 @@
 
 }
 
-
-
 // end support 
+
+// start join 
+.join{
+  text-align: center;
+  &__item{
+    padding: 100px 0px;
+    &-title{
+      color: #fff;
+      font-size: 36px;
+      padding: 8px 10px 0px;
+    }
+    &-text{
+      font-size: 18px;
+      color: #e7e7e7;
+      padding: 18px 10px 20px;
+
+    }
+    &-btn{
+      button{
+        color: $text_2;
+        background-color: #fff;
+      }
+    }
+  }
+  max-height: 400px;
+  background-image: linear-gradient(270deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+}
+// end join 
+
+
 
 
 
