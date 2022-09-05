@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'global';
 @import 'icons';
+@import 'fonts';
 
 // start header 
  
@@ -21,7 +22,6 @@
     color: #000;
     font-size: 30px;
     @include f700;
-    
   }
   span{
     color: $text_2;
@@ -66,7 +66,8 @@
     line-height: 24px;
   }
 }
-.menu__search{
+.menu__search,
+.footer__col-form{
   form{
     min-width: 360px;
     width: 100%;
@@ -992,6 +993,236 @@
   background-image: linear-gradient(270deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
 }
 // end join 
+// start footer
+.footer{
+  &__content{
+  background-color: #262b30;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 0px 120px;
+  }
+}
+.footer__col{
+  max-width: 270px;
+  
+  &-menu{
+    max-width: 150px;
+  }
+  &-news{
+    max-width: 370px;
+  }
+  &-logo{
+    a{
+    display: flex;
+    align-items: center;
+    color: $text_2;
+    font-size: 24px;
+    @include f700;
+    padding-bottom: 30px;
+    }
+  span{
+    color: #fff;
+    margin-left: 4px;
+    }
+  }
+  &-title{
+    font-size: 18px;
+    line-height: 42px;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+  &-text{
+    font-size: 15px;
+    line-height: 28px;
+    color: #ababab;
+    padding-bottom: 10px;
+  }
+  &-info{
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #ababab;
+    position: relative;
+    padding-left: 30px;
+    .lnr-phone-handset::before{
+      content: '\e830';
+      position: absolute;
+      left: 0;
+      bottom: 8px;
+    }
+    .lnr-envelope::before{
+      content: '\e818';
+      position: absolute;
+      left: 0;
+      bottom: 6px;
+    }
+    .lnr-map-marker::before {
+      content: '\e833';
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+    }
+  }
+  &-list{
+    a{
+      margin-bottom: 15px;
+      color: #ababab;
+      font-size: 15px;
+    }
+  }
+
+}
+.footer__col-form{
+  padding-top: 25px;
+  form{
+    button{
+      width: 112px;
+    }
+  }
+}
+.footer__social-link{
+  display: flex;
+  padding-top: 46px;
+  li + li{
+    margin-left: 10px;
+  }
+}
+.link-facebook{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #395799;
+  position: relative;
+  &::before{
+    content: '\f09a';
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+.link-twitter {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #19b2f5;
+  position: relative;
+  &::before {
+    content: '\f099';
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+.link-google {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #f05b44;
+  position: relative;
+
+  &::before {
+    content: '\f1a0';
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+.link-pinterest {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #9c0c1c;
+  position: relative;
+
+  &::before {
+    content: '\f0d2';
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+.link-linkedin {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #0da6be;
+  position: relative;
+
+  &::before {
+    content: '\f0e1';
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+.link-dribbble {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ea4c89;
+  position: relative;
+
+  &::before {
+    content: '\f17d';
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+
+.footer__copy{
+  background-color: #192027;
+  &-text{
+    text-align: center;
+    font-size: 15px;
+    line-height: 27px;
+    color: #999999;
+    padding: 38px 0px 38px;
+    span{
+      color: #fff;
+    }
+  }
+}
+
+// end footer
+
 
 
 
