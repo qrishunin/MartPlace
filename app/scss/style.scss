@@ -1272,73 +1272,60 @@
 }
 .filter__menu-sort{
   display: flex;
-  justify-content: space-between;
   color: #555;
   font-size: 14px;
   
   &__prise,
   &__page{
-    position: relative;
     border: 1px solid #eceff2;
-    padding: 15px 82px 15px 18px;
+    padding: 15px 0px 15px 18px;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    &::before{
-      content: '\f107';
-      font-family: 'icomoon';
+    display: flex;
+    justify-content: space-between;
+    button{
+      display: block;
       font-size: 14px;
-      position: absolute;
-      right: 0;
-      padding-right: 16px;
+      padding-right: 18px;
+      padding-left: 53px;
       cursor: pointer;
-
+      border: none;
+      background-color: transparent;
     }
-    
-
   }
-  &__page{
-    margin-left: 28px;
-
-  }
-
-  &__pannel{
-    width: 93px;
+  &__pannel {
+    width: 94px;
+    margin-left: 30px;
     border: 1px solid #eceff2;
+    padding: 11px 14px 11px 14px;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    margin-left: 30px;
-    text-align: center;
-  }
-}
-.sort-large{
-  position: relative;
-  &::before {
-      content: '\f009';
-      font-family: 'icomoon';
-      color: #000;
-      font-size: 14px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      // transform: translate(50%, 50%);
-      
+    display: flex;
+    justify-content: center;
+    button {
+      display: block;
+      font-size: 15px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      transition: all .5s;
+      &.active{
+        color: $text_2;
+      }
     }
-}
-.sort-list {
-  position: relative;
-  margin-left: 15px;
-
-  &::before {
-    content: '\e9ba';
-    font-family: 'icomoon';
-    color: #000;
-    font-size: 14px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    // transform: translate(50%, 50%);
-
   }
+
+
+  &__page{
+    margin-left: 30px;
+  }
+
+}
+.icon-th-large{
+  
+}
+.icon-th-list {
+
 }
 
 // end filter menu 
@@ -1578,8 +1565,7 @@
     margin-left: 5px;
   }
  
-  a:hover{
-    content: '';
+  a.active{
     background-color: $text_2;
     color: #fff;
   }

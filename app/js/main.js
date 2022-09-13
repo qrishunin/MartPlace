@@ -27,7 +27,7 @@ $(function () {
     skin: "round",
     type: "double",
     min: 0,
-    max: 360,
+    max: 380,
     from: 30,
     to: 300,
     grid: false,
